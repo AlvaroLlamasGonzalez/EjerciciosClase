@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Google Maps</title>
+</head>
+<body>
+
+    <h1>Buscador de Rutas con Google Maps</h1>
+    <p>Introduce un origen y un destino para obtener las indicaciones de ruta.</p>
+
+    <form method="GET" action="https://www.google.com/maps/dir">
+
+        <input type="hidden" name="api" value="1">
+
+        <label for="origen_input">Origen (Lugar, Ciudad, País):</label>
+        <br>
+        <input type="text" id="origen_input" name="origin" placeholder="Ej: Calle Gran Vía 34, Madrid" size="50" required>
+        <br><br>
+
+        <label for="destino_input">Destino (Lugar, Ciudad, País):</label>
+        <br>
+        <input type="text" id="destino_input" name="destination" placeholder="Ej: Plaza Mayor, Madrid" size="50" required>
+        <br><br>
+
+        <button type="submit">Buscar Ruta</button>
+
+    </form>
+
+</body>
+</html>
